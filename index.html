@@ -6,12 +6,69 @@
     <meta name="keywords" content="science, study tools, study tool, realfag, realfag.net">
     <meta name="description" content="Nettstedet som gjør realfag enklere og har et oppgave gjennkjennelsesprogram">
     <meta name="author" content="Nover Studio">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" id="theme-style">
+    <link rel="stylesheet" href="/css/styles.css" id="theme-style">
     <title>Sanjeevarasa Satkunarasa</title>
-    
 </head>
 <body>
-    <h1>Hi I am Sanjeevan and this website in currently under development!</h1>
-</body>
+    <header>
+        <img src="media/logo.png" id="logo" alt="Logo">
+        <ul class="nav">
+            <li class="nav-items"><a href="#about">About</a></li>
+            <li class="nav-items"><a href="#hobbies">Hobbies</a></li>
+            <li class="nav-items"><a href="#notion">Notion</a></li>
+            <li class="nav-items"><a href="#project">Projects</a></li>
+        </ul>
+    </header>
 
+    <div id="about">
+        <img id="sanjeevan" src="media/sanjeevan.png" alt="Sanjeevan">
+        <div id="introduction">
+            <h2 id="welcome">Hi, I'm Sanjeevan</h2>
+            <h1>Self-taught Programmer/Student based in Oslo</h1>
+            <ul id="links_button">
+                <li><button onclick="darkMode()"><img src="media/dark_mode.png" alt="Dark Mode"></button></li>
+                <li><a href="https://github.com/sanjeevarasa-satkunarasa" target="_blank" class="link">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="hobbies">
+        <h1>What I get up to in my spare time?</h1>
+        <div class="hobby_container">
+            <div class="hobby_item">
+                <h2>Gardening</h2>
+                <p>I'm a passionate gardener and having been gardening for about 3 years now.</p>
+                <img class="hobby_image" alt="Gardening Image">
+            </div>
+            <div class="hobby_item">
+                <h2>Programming</h2>
+                <p>Self-taught programmer in HTML, JS, CSS and Python and I continue to learn and program to this date.</p>
+                <img class="hobby_image" src="media/coding.png" alt="Programming Image">
+            </div>
+            <div class="hobby_item">
+                <h2>Working Out</h2>
+                <p>Started consistently going to the gym recently and have started getting those reps in.</p>
+                <img class="hobby_image" alt="Gym Image">
+            </div>
+        </div>
+    </div>
+
+    <div id="project">
+        <h1>My Recent Projects</h1>
+        <div class="project_container">
+            <div class="project_item">
+                <h2>Realfag.net</h2>
+                <p>Working as a developer/writer at Realfag.net with various tasks ranging from programming an OCR Past Paper Comparison tool to writing information on how to navigate through the Norwegian school system.</p>
+                <img src="/media/realfag.png" alt="Realfag Project">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="copyright">© Sanjeevarasa Satkunarasa 2024. All Rights Reserved</p>
+        <p id="contact">Email: <a href="mailto:ssanjeevarasa@gmail.com">ssanjeevarasa@gmail.com</a></p>
+    </footer>
+
+    <script src="script/darkmode.js"></script>
+</body>
 </html>
