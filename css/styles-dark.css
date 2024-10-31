@@ -1,12 +1,28 @@
+@font-face {
+    font-family: more-sugar-regular;
+    src: url(/fonts/more-sugar.regular.ttf);
+}
+
+@font-face {
+    font-family: more-sugar-thin;
+    src: url(/fonts/more-sugar.thin.ttf);
+}
+
+
 * {
-    background-color: #474945;
+    background-color:pink;
     margin: 0;
     padding: 0;
 }
 
-p, h1, h2, h3, h4 , a{
+h1, h2, h3, h4 , a{
     color:#3E464C;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "more-sugar-regular", sans-serif;
+}
+
+p {
+    color:#3E464C;
+    font-family: "more-sugar-thin", sans-serif;
 }
 
 header {
@@ -29,12 +45,19 @@ header {
     float: right;
     padding-right: 20px;
     list-style: none;
+    font-size: 18px;
 }
 
 .nav-items {
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 12px;
     margin-right: 10px;
+    text-decoration: none;
+}
+
+#dark_mode_button {
+    height: 50px;
+    width: 50px;
 }
 
 #about {
@@ -45,23 +68,22 @@ header {
 
 #sanjeevan {
     float: right;
-    height: 10vh;
-    width: 100vw;
+    height: 520px;
+    width: 500px;
     padding-top: 15px;
-    background-color: #EDF3E6;
     filter: opacity(90%);
     z-index: 3;
 }
 
 #introduction {
-    height: 80vh;
+    padding-top: 150px;
+    padding-bottom: 175px;
 }
 
 #links_button {
     position: absolute;
-    padding-top: 75px;
+    padding-top: 40vh;
     list-style: none;
-
 }
 
 #links_button li {
@@ -104,18 +126,6 @@ header {
     width: 375px;
 }
 
-#notion {
-    text-align: center; 
-    padding-bottom: 30px;
-}
-
-#notion-img {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    height: 400px;
-    width: 700px;
-}
-
 #project h1 {
     text-align: center;
 }
@@ -123,6 +133,11 @@ header {
 .project_container {
     padding-top: 20px;
     padding-left: 10px;
+}
+
+.project_item img{
+    width: 300px;
+    height: auto;
 }
 
 footer {

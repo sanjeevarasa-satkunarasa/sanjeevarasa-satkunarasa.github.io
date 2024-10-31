@@ -1,6 +1,8 @@
 function darkMode() {
-    var themeStyle = document.getElementById("theme-style");
-    if (themeStyle.getAttribute("href") === "/css/styles.css") {
-        themeStyle.setAttribute("href") = "/css/styles-dark.css"
+    let themeStyle = document.getElementById("theme-style");
+    if (themeStyle.getAttribute("href") == "/css/styles.css") {
+        themeStyle.href = "/css/styles-dark.css"
+    } else if (themeStyle.getAttribute("href")  == "/css/styles-dark.css") {
+        themeStyle.href = "/css/styles.css"
     }
 }
